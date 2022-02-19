@@ -1,3 +1,0 @@
-DROP DATABASE IF EXISTS dogo_db;
-
-CREATE DATABASE dogo_db;
