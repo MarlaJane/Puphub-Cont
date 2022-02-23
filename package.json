@@ -13,7 +13,6 @@
     "handlebars": "^4.7.7",
     "modules": "^0.4.0",
     "mysql2": "^2.3.3",
-    "node": "^17.4.0",
     "nodemon": "^2.0.15",
     "postcss-cli": "^9.1.0",
     "prettier": "^2.5.1",
@@ -25,9 +24,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
-  "engines": {
-    "node": "16.x"
-  },
+  
   "scripts": {
     "compile:sass": "sass --watch public/scss:public/assets/css",
     "test": "echo \"Error: no testing specified\" && exit 1",
