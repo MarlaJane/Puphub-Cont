@@ -19,10 +19,13 @@
     "sass": "^1.49.8",
     "sequelize": "^6.16.2"
   },
+  
   "name": "puphub-cont",
   "description": "![Logo](public/images/pupHubLogo.png)",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
+
+
   "devDependencies": {},
   
   "scripts": {

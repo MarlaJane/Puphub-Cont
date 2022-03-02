@@ -30,14 +30,7 @@ app.use(session(sess));
 //app.use(passport.session());
 
 // Inform Express.js on which template engine to use
-const hbs = exphbs.create({
-  extname: 'hbs',
-  defaultLayout: 'base',
-  layoutsDir: path.join(__dirname, '/views/layouts/'),
-  partialsDir: path.join(__dirname, '/views/partials/'),
-  helpers: helpers,
-});
-
+const hbs = exphbs.create({ helpers });
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
