@@ -12,7 +12,7 @@ const helpers = require('./utils/helpers');
 //const passportCfg = require('./config/passport');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 const sess = {
   secret: 'SuperSecretSquirrel',
@@ -43,5 +43,5 @@ app.use(routes);
 
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {
-  app.listen(process.env.PORT, () => console.log(`App listening on port ${PORT}!`));
+  app.listen(PORT, () => console.log(`App listening on port ${PORT}!`));
 });
