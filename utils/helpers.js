@@ -1,4 +1,4 @@
-module.exports = {
+const helpers = {
   format_date: (date) => {
     // Format date as MM/DD/YYYY
     return date.toLocaleDateString();
@@ -24,3 +24,5 @@ module.exports = {
     }
   },
 };
+
+module.exports = helpers;

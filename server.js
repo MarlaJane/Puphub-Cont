@@ -12,7 +12,7 @@ const helpers = require('./utils/helpers');
 //const passportCfg = require('./config/passport');
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3001;
 
 const sess = {
   secret: 'SuperSecretSquirrel',
