@@ -3,6 +3,9 @@
   "description": "![Logo](public/images/pupHubLogo.png)",
   "version": "1.0.0",
   "main": "server.js", 
+  "engines": {
+    "node": "16.0.0"
+  },
   "scripts": {
     "compile:sass": "sass --watch public/scss:public/assets/css",
     "test": "echo \"Error: no testing specified\" && exit 1",
